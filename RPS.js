@@ -1,4 +1,3 @@
-
 function getComputerChoice(){
     let computerChoice = Math.floor(Math.random()*3);
         if (computerChoice == 0){
@@ -24,45 +23,48 @@ function getPlayerChoice (){
     else {return "Invalid Choice"}
 }
 
-
+let result = ""
 function playRound (playerSelection, computerSelection){
+    
     playerSelection = getPlayerChoice ()
     computerSelection = getComputerChoice()
-    let result = ""
+    
+
     if (playerSelection == computerSelection){
-        result = ", tie game!"; return "The computer picked " +  computerSelection + result
+        result = ", tie game!"; return "The Computer picked " +  computerSelection + result
     }
 
     else if (playerSelection == "Rock"){
-        if (computerSelection == "Paper"){result = ", you lost!"; return "The computer picked " +  computerSelection + result; computerScore++}
-        else if (computerSelection == "Scissor"){result = ", you won!" ; return "The computer picked " +  computerSelection + result; playerScore++}
+        if (computerSelection == "Paper"){result = ", you lost!"; return "The Computer picked " +  computerSelection + result;}
+        else if (computerSelection == "Scissor"){result = ", you won!" ; return "The Computer picked " +  computerSelection + result;}
         }
     
     else if (playerSelection == "Paper"){
-        if (computerSelection == "Scissor"){result = ", you lost!" ; return "The computer picked " +  computerSelection + result; computerScore++}
-        else if (computerSelection == "Rock"){result = ", you won!"; return "The computer picked " +  computerSelection + result; playerScore++}
+        if (computerSelection == "Scissor"){result = ", you lost!" ; return "The Computer picked " +  computerSelection + result; }
+        else if (computerSelection == "Rock"){ result = ", you won!"; return "The Computer picked " +  computerSelection + result; }
         }
 
     else if (playerSelection == "Scissor"){
-        if (computerSelection == "Rock"){result = ", you lost!"; return "The computer picked " +  computerSelection + result; computerScore++}
-        else if (computerSelection == "Paper"){result = ", you won!"; return "The computer picked " +  computerSelection + result; playerScore++}
+        if (computerSelection == "Rock"){result = ", you lost!"; return "The Computer picked " +  computerSelection + result;}
+        else if (computerSelection == "Paper"){result = ", you won!"; return "The Computer picked " +  computerSelection + result;}
         }
     else "Error"
 }
 
 
-function playGame (playerScore, computerScore){
-    for (let i = 1; i < 5; i++){
-        playRound()
+function playGame (){
+    let playerScore = parseInt(0);
+    let computerScore = parseInt(0);
+    for (let i = 0; i < 5; i++){
         console.log(playRound ());
+            if (result == ", you lost!"){computerScore++}
+            else if (result == ", you won!"){playerScore++}
+        console.log("The Computer's score is " + computerScore)
+        console.log("Your score is " + playerScore)
+            
     }
-
+            if (computerScore > playerScore){alert("You Lost!")}
+            else if(computerScore < playerScore){alert("You Won!")}
+            else if(computerScore == playerScore){alert("It's a Tie!")}
 }
-
-
-//console.log("Your Score is " + playerScore)
-//console.log("The computer's score is " + computerScore)
-//let playerScore = parseInt(0);
-//let computerscore = parseint(0);
-
 
