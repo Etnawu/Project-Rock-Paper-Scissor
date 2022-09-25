@@ -26,10 +26,26 @@ function getPlayerChoice (){
 
 
 function playRound (playerSelection, computerSelection){
-    playerSelection = getComputerChoice()
-    computerSelection= getPlayerChoice () 
+    playerSelection = getPlayerChoice ()
+    computerSelection = getComputerChoice()
     if (playerSelection == computerSelection){
         return "Tie Game"
     }
+
+    else if (playerSelection == "Rock"){
+        if (computerSelection == "Paper"){return "You Lose"}
+        else if (computerSelection == "Scissor"){return "You Win"}
+        }
+    
+    else if (playerSelection == "Paper"){
+        if (computerSelection == "Scissor"){return "You Lose"}
+        else if (computerSelection == "Rock"){return "You Win"}
+        }
+
+    else if (playerSelection == "Scissor"){
+        if (computerSelection == "Rock"){return "You Lose"}
+        else if (computerSelection == "Paper"){return "You Win"}
+        }
+    else "Error"
 }
 
