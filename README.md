@@ -12,7 +12,7 @@ GUI with buttons and text will be implemented later on </p>
 <ul>
 <li>function get computer choice </li>
 
-<li>function to get a random number between 1 2 3 (or 0 1 2)</li>
+<li>get a random number between 1 2 3 (or 0 1 2)</li>
 
 <li>1 = rock</li>
 
@@ -22,7 +22,7 @@ GUI with buttons and text will be implemented later on </p>
 
 <li>get computer choice</li>
 
-<li>playerSelection</li>
+<li>function to get playerchoice</li>
 
 <li>get player input</li>
 
@@ -56,8 +56,6 @@ GUI with buttons and text will be implemented later on </p>
 
 <li>if computer wins computerScore++</li>
 
-<li>if playerScore = 5, you win, end loop</li>
-
-<li>if computerScore = 5, you lose, end loop</li>
+<li>end loop after 5 games</li>
 
 </ul>

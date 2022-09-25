@@ -28,25 +28,41 @@ function getPlayerChoice (){
 function playRound (playerSelection, computerSelection){
     playerSelection = getPlayerChoice ()
     computerSelection = getComputerChoice()
+    let result = ""
     if (playerSelection == computerSelection){
-        return "Tie Game"
+        result = ", tie game!"; return "The computer picked " +  computerSelection + result
     }
 
     else if (playerSelection == "Rock"){
-        if (computerSelection == "Paper"){return "You Lose"}
-        else if (computerSelection == "Scissor"){return "You Win"}
+        if (computerSelection == "Paper"){result = ", you lost!"; return "The computer picked " +  computerSelection + result; computerScore++}
+        else if (computerSelection == "Scissor"){result = ", you won!" ; return "The computer picked " +  computerSelection + result; playerScore++}
         }
     
     else if (playerSelection == "Paper"){
-        if (computerSelection == "Scissor"){return "You Lose"}
-        else if (computerSelection == "Rock"){return "You Win"}
+        if (computerSelection == "Scissor"){result = ", you lost!" ; return "The computer picked " +  computerSelection + result; computerScore++}
+        else if (computerSelection == "Rock"){result = ", you won!"; return "The computer picked " +  computerSelection + result; playerScore++}
         }
 
     else if (playerSelection == "Scissor"){
-        if (computerSelection == "Rock"){return "You Lose"}
-        else if (computerSelection == "Paper"){return "You Win"}
+        if (computerSelection == "Rock"){result = ", you lost!"; return "The computer picked " +  computerSelection + result; computerScore++}
+        else if (computerSelection == "Paper"){result = ", you won!"; return "The computer picked " +  computerSelection + result; playerScore++}
         }
     else "Error"
 }
+
+
+function playGame (playerScore, computerScore){
+    for (let i = 1; i < 5; i++){
+        playRound()
+        console.log(playRound ());
+    }
+
+}
+
+
+//console.log("Your Score is " + playerScore)
+//console.log("The computer's score is " + computerScore)
+//let playerScore = parseInt(0);
+//let computerscore = parseint(0);
 
 
