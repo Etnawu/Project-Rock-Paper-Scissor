@@ -1,10 +1,16 @@
 # Project-Rock-Paper-Scissor
+<<<<<<< HEAD
 A project on Rock Paper Scissor made from scratch in javascript
+=======
+>>>>>>> 0a264e87d6c1efba78468b1a91fe2ef9dfe4cea8
 
 <p> A project on Rock Paper Scissor made from scratch in javascript
 
 For the time-being, the game will be played in the browser console
+<<<<<<< HEAD
 GUI with buttons and text will be implemented later on 
+=======
+>>>>>>> 0a264e87d6c1efba78468b1a91fe2ef9dfe4cea8
 
 GUI with buttons and text will be implemented later on </p>
 
@@ -59,4 +65,8 @@ GUI with buttons and text will be implemented later on </p>
 <li>if playerScore = 5, you win, end loop</li>
 
 <li>if computerScore = 5, you lose, end loop</li>
+<<<<<<< HEAD
 </ul>
+=======
+</ul>
+>>>>>>> 0a264e87d6c1efba78468b1a91fe2ef9dfe4cea8
