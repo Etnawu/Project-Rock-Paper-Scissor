@@ -45,6 +45,8 @@ function playRound (playerSelection, computerSelection){
 
     if (playerSelection == computerSelection){
         result = "The Computer picked " +  computerSelection + ", tie game!"; 
+        document.getElementById("playerScore").innerHTML = "Player Score: " + playerScore;
+        document.getElementById("computerScore").innerHTML = "Computer Score: " + computerScore;
         return document.getElementById("result").innerText = result;
     }
 
@@ -103,6 +105,7 @@ function scoreCheck(){
     if (playerScore < 5 && computerScore < 5){
         document.getElementById("playButton").onclick = playRound;
         document.getElementById("playButton").innerText = "Play Round";
+        document.getElementById("startBanner").innerText = "";
     }
 
     else if(playerScore == 5 || computerScore == 5){
