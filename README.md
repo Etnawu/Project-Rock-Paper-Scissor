@@ -2,12 +2,6 @@
 
 A project on Rock Paper Scissor made from scratch in javascript
 
-<p> A project on Rock Paper Scissor made from scratch in javascript
-
-For the time-being, the game will be played in the browser console
-
-GUI with buttons and text will be implemented later on </p>
-
 ### <ins>Pseudo code</ins>
 <ul>
 <li>function get computer choice </li>
@@ -42,10 +36,6 @@ GUI with buttons and text will be implemented later on </p>
 
 <li>if playerchoice == computer choice, tied</li>
 
-<li>playGame function</li>
-
-<li>loop</li>
-
 <li>run playRound function</li>
 
 <li>computerScore variable</li>
@@ -56,6 +46,8 @@ GUI with buttons and text will be implemented later on </p>
 
 <li>if computer wins computerScore++</li>
 
-<li>end loop after 5 games</li>
+<li>First to 5 wins</li>
+
+<li>Added ui</li>
 
 </ul>
