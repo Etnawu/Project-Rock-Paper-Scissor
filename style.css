@@ -23,6 +23,23 @@ body {
     margin: auto;
   }
 
+#buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.choiceButton {
+    font-size: medium;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
+    padding: 50px;
+    margin: auto;
+}
+
+
 #textContainer {
     display: flex;
     justify-content: center;
@@ -42,3 +59,8 @@ body {
     width: 300px;
 }
 
+.classButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
