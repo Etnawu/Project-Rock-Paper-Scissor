@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor</title>
+    <title>Rock Paper Scissors</title>
     <script src="RPS.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<div id="header"><h3>ROCK PAPER SCISSORS!</h3></div>
-    <button id="playButton" onclick="">Click here to Start!</button>
+    <div id="header">
+        <h3>ROCK PAPER SCISSORS!</h3>
+    </div>
+
+    <!-- Score and result text container -->
     <div id="textContainer">
         <div id="miniContainer">
-            <div id="playerScore"></div>
-            <div id="computerScore"></div>
-            <div id="result">First to 5 wins!</div> 
+            <div id="playerScore">Player Score: 0</div>
+            <div id="computerScore">Computer Score: 0</div>
+            <div id="result">First to 5 wins! Choose your weapon!</div> 
         </div>
     </div>
 
+    <!-- Choice buttons and Next round button -->
+    <div id="interactiveArea">
+        <div id="buttonContainer">
+            <button class="choiceButton" data-choice="Rock">🪨</button>
+            <button class="choiceButton" data-choice="Paper">📄</button>
+            <button class="choiceButton" data-choice="Scissor">✂️</button>
+        </div>
+        <button id="nextButton" style="display: none;">Next Round</button>
+    </div>
+
+    <!-- Reset button -->
+    <div id="resetContainer">
+        <button id="playButton" class="actionButton">Reset Game</button>
+    </div>
 </body>
 </html>
